@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mercedes Booking</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>:root { --gold-color: #CFAF6F; }</style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+  <header id="header" class="sticky top-0 bg-white/80 backdrop-blur-md shadow-md z-50"></header>
+
+  <main class="flex-grow container mx-auto px-6 py-20">
+    <h1 class="text-4xl font-bold mb-6 text-center">Book Your Mercedes</h1>
+    <form class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-xl space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border p-3 rounded-md" required />
+      <input type="text" placeholder="Preferred Model" class="w-full border p-3 rounded-md" required />
+      <textarea placeholder="Feedback or Special Requests" class="w-full border p-3 rounded-md" rows="4"></textarea>
+      <button type="submit" class="bg-[var(--gold-color)] text-white px-6 py-3 rounded-full">Submit Booking</button>
+    </form>
+  </main>
+
+  <footer id="footer" class="bg-gray-900 text-white py-10 mt-auto"></footer>
+  <script src="nav.js"></script>
+</body>
+</html>
